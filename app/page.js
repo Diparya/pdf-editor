@@ -1,5 +1,6 @@
 'use client';
 import { EmbedPDF } from "@simplepdf/react-embed-pdf";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -10,12 +11,12 @@ export default function Home() {
                 </h1>
                 <div className="border border-gray-300 rounded-md overflow-hidden">
                     <EmbedPDF companyIdentifier="yourcompany">
-                        <a
+                        <Link
                             href="https://cdn.simplepdf.com/simple-pdf/assets/sample.pdf"
                             className="text-blue-500 hover:underline"
                         >
                             Open Sample PDF
-                        </a>
+                        </Link>
                     </EmbedPDF>
                 </div>
             </div>
